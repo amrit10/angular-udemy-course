@@ -3,8 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // style is array to inlclude multiple style files
+  // styleUrls: ['./app.component.css'] // Either this, or inline style (below)
+  styles: [`
+    h3 {
+      color: dodgerblue;
+    }
+  `]
 })
 export class AppComponent {
-  title = 'angular-udemy-course';
 }
